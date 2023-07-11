@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 9,
+      "name": "damthanhtrung",
+      "image": "jpg",
+      "price": "200",
+      "quality": "200",
+      "description": "tot"
+    },
+    {
+      "name": "damthanhtrung",
+      "image": "jpg",
+      "price": "200",
+      "quality": "200",
+      "description": "tot",
+      "id": 9
+    },
+    {
+      "name": "damthanhtrung",
+      "image": "jpg",
+      "price": "200",
+      "quality": "200",
+      "description": "tot",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "trung",
+      "image": "jph",
+      "price": "0222",
+      "quality": "22",
+      "description": "motaaaabg"
+    },
+    {
+      "name": "dsvds",
+      "image": "vsdvs",
+      "price": "0dvsdv",
+      "quality": "0dsvds",
+      "description": "dsv",
+      "id": 11
+    }
+  ]
+}

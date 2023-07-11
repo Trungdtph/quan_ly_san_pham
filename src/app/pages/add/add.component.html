@@ -1,0 +1,47 @@
+<div>
+    <h1>Them san pham</h1>
+</div>
+<form [formGroup]="form" (ngSubmit)="onHandleSubmit()">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">name</label>
+        <input formControlName="name" type="text" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" />
+        <div id="emailHelp" class="form-text">
+            Yeu cau bat buoc nhap
+        </div>
+    </div>
+    <div *ngIf="form.get('name')?.hasError('required')">chua nhap</div>
+
+
+    
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Ảnh</label>
+        <input formControlName="image" type="text" class="form-control" id="exampleInputPassword1" />
+    </div>
+    <div *ngIf="form.get('price')?.hasError('required')">chua nhap</div>
+
+
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input formControlName="price" type="text" class="form-control" id="exampleInputPassword1" />
+    </div>
+    <div *ngIf="form.get('quality')?.hasError('required')">Chua nhap</div>
+
+
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Quality</label>
+        <input formControlName="quality" type="text" class="form-control" />
+    </div>
+    <div *ngIf="form.get('quality')?.hasError('required')">Chua nhap</div>
+
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <input formControlName="description" type="text" class="form-control" id="exampleInputPassword1" />
+    </div>
+    <div *ngIf="form.get('description')?.hasError('required')">Chua nhap</div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
